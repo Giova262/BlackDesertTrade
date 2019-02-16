@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.MenuController">
+   <content>
+      <Pane prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <Label alignment="CENTER" layoutX="482.0" layoutY="24.0" prefHeight="17.0" prefWidth="183.0" text="BDO Trading Program" textAlignment="RIGHT" />
+            <ScrollPane layoutX="46.0" layoutY="113.0" prefHeight="600.0" prefWidth="300.0">
+               <content>
+                  <ListView fx:id="prodListView" prefHeight="600.0" prefWidth="300.0" />
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="96.0" layoutY="86.0" prefHeight="17.0" prefWidth="183.0" text="Lista de Productos" textAlignment="RIGHT" />
+            <Button layoutX="20.0" layoutY="751.0" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="73.0" text="Salir" />
+            <Button layoutX="115.0" layoutY="751.0" mnemonicParsing="false" onAction="#agregarScene" prefHeight="25.0" prefWidth="128.0" text="Agregar Producto" />
+            <ImageView fx:id="mapImageView" fitHeight="388.0" fitWidth="569.0" layoutX="610.0" layoutY="113.0" pickOnBounds="true" />
+            <ImageView fx:id="fotoImageView" fitHeight="50.0" fitWidth="50.0" layoutX="46.0" layoutY="53.0" pickOnBounds="true" />
+            <ImageView fx:id="descripImageView" fitHeight="345.0" fitWidth="245.0" layoutX="354.0" layoutY="113.0" pickOnBounds="true" />
+            <Label fx:id="conocimientoText" alignment="CENTER" layoutX="375.0" layoutY="86.0" prefHeight="17.0" prefWidth="581.0" text="Productos" textAlignment="RIGHT" />
+         </children>
+      </Pane>
+   </content>
+</ScrollPane>
